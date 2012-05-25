@@ -16,6 +16,10 @@ public class EffektvsTidGraf extends GChart {
 	   }
 	
 	 DateStampedValue[] dateSequence = {
+			   
+			    new DateStampedValue("5/23/2012 00:00", 80.0),
+			    new DateStampedValue("5/23/2012 01:00", 80.0),
+			    new DateStampedValue("5/23/2012 02:00", 40.0),
 			    new DateStampedValue("5/23/2012 03:00", 40.0),
 			    new DateStampedValue("5/23/2012 04:00", 80.0),
 			    new DateStampedValue("5/23/2012 05:00", 80.0),
@@ -37,9 +41,6 @@ public class EffektvsTidGraf extends GChart {
 			    new DateStampedValue("5/23/2012 21:00", 160.0),
 			    new DateStampedValue("5/23/2012 22:00", 160.0),
 			    new DateStampedValue("5/23/2012 23:00", 120.0),
-			    new DateStampedValue("5/23/2012 00:00", 80.0),
-			    new DateStampedValue("5/23/2012 01:00", 80.0),
-			    new DateStampedValue("5/23/2012 02:00", 40.0),
 			   };
 	 
 	 EffektvsTidGraf() {
@@ -49,14 +50,14 @@ public class EffektvsTidGraf extends GChart {
 	     
 	     getXAxis().setAxisLabel("<small><b><i>Tid</i></b></small>");
 	     getXAxis().setHasGridlines(true);
-	     getXAxis().setTickCount(6);
+	     getXAxis().setTickCount(10);
 	     // Except for "=(Date)", a standard GWT DateTimeFormat string
 	     getXAxis().setTickLabelFormat("=(Date)dd/h:mm a");
 	          
 	     getYAxis().setAxisLabel("<small><b><i>WATT</i></b></small>");
 	     getYAxis().setHasGridlines(true);
-	     getYAxis().setTickCount(6);
-	     getYAxis().setAxisMin(10);
+	     getYAxis().setTickCount(10);
+	     getYAxis().setAxisMin(0);
 	     getYAxis().setAxisMax(400);
 	     
 	     addCurve();
