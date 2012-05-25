@@ -1,0 +1,2 @@
+serviceClass: hikst.frontendg4.client.GreetingService
+path: 960CAE5EDB71FF3D5E581B0FA85DFB95.gwt.rpc
