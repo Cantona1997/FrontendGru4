@@ -3,38 +3,48 @@
     xmlns:g="urn:import:com.google.gwt.user.client.ui">
     <ui:style>
         .eastPanel {
-            background-color: #F60;
+            background-color: Gray;
         }
         .westPanel {
-            background-color: #EEE;
+        	background-color: Gray;
         }
         .northPanel {
-            background-color: #39F;
+        	background-color: Gray;
         }
         .southPanel {
-            background-color: #99C;
+            background-color: Gray;
         }
         .centerPanel {
-            background-color: #FFC;
+        	background-color: White;
         }
     </ui:style>
      <g:DockLayoutPanel unit='EM'>
-       <g:north size='5'>
-         <g:FlowPanel styleName="{style.northPanel}"/>
+       <g:north size='2.1'>
+         <g:FlowPanel styleName="{style.northPanel}">
+         	<g:Button width="132px" height="27px" text="Graf" ui:field="Test1">TEST</g:Button>
+         </g:FlowPanel>
        </g:north>
-       <g:west size='15'>
+       <g:west size='16.1'>
          <g:FlowPanel styleName="{style.westPanel}">
-         	<g:Button width="195px" height="35px" text="Tegn Graf" ui:field="runButton">Tegn Graf</g:Button>
+         	<g:TextBox text="Navn" width="172px" ui:field="user" name="user"/>
+           <g:TextBox text="Passord" width="172px" ui:field="pass" name="pass"/>
+           <g:Button ui:field="login">Logg Inn</g:Button>
+           <g:Button ui:field="update">Oppdatere innput</g:Button>
+           <g:TextBox text="Hus størrelse i m^2" ui:field="housesize" name="housesize"/>
+           <g:TextBox text="Antall personer i hus" name="nrpersons" ui:field="nrpersons"/>
          </g:FlowPanel>
        </g:west>
        <g:center>
-         <g:FlowPanel styleName="{style.centerPanel}" ui:field="centerpanel"/>
+         <g:FlowPanel styleName="{style.centerPanel}" ui:field="centerPanel"/>
        </g:center>
-       <g:east size='15'>
+       <g:east size='10.5'>
          <g:FlowPanel styleName="{style.eastPanel}"/>
+   
        </g:east>
-        <g:south size="5">
-         <g:FlowPanel styleName="{style.southPanel}"/>
+        <g:south size="2.3">
+         <g:FlowPanel styleName="{style.southPanel}">
+         	<g:Label text="New Label" ui:field="aa" width="160px"/>
+         </g:FlowPanel>
         </g:south>
      </g:DockLayoutPanel>
 </ui:UiBinder>
