@@ -16,10 +16,12 @@ import com.google.gwt.user.client.ui.Label;
  
 public class MyDockLayoutPanel extends Composite {
 
-	public boolean lightbolb = false;
-	public boolean heater = false;
-	public boolean loggedin = false;
-	String user1 = "hikst";
+	private boolean lightbolb = false;
+	private boolean heater = false;
+	private boolean loggedin = false;
+	private boolean updated = false;
+	private String user1 = "hikst";
+	private String userpass = "2012";
 	//interface MyUiBinder extends UiBinder<Widget, MyDockLayoutPanel>{}
 	Objects o = new Objects();
     EffektvsTidGraf g;
@@ -40,7 +42,7 @@ public class MyDockLayoutPanel extends Composite {
     
     public MyDockLayoutPanel(){
     	initWidget(uiBinder.createAndBindUi(this));
-    	aa.setText("You need to log in");
+    	aa.setText("Du må logge inn");
     	//housesize.setText("");
     	//nrpersons.setText("");	
     }
@@ -50,6 +52,16 @@ public class MyDockLayoutPanel extends Composite {
     	housesize.setText("");
     }
     
+    @UiHandler("user")
+    void onClick5(ClickEvent e){
+    	user.setText("");
+    }
+    
+    @UiHandler("pass")
+    void onClick6(ClickEvent e){
+    	pass.setText("");
+    }
+    
     @UiHandler("nrpersons")
     void onClick3(ClickEvent event){
     	nrpersons.setText("");
@@ -57,11 +69,12 @@ public class MyDockLayoutPanel extends Composite {
     
     @UiHandler("update")
     void onClick4(ClickEvent e){
+    	updated = true;
     	String s = nrpersons.getText();
     	String ss = housesize.getText();
     	nrpersons2 = Integer.parseInt(s);
     	housesize2 = Integer.parseInt(ss);
-    	aa.setText(s + " " + ss);
+    	//aa.setText(s + " " + ss);
     	
     	if (nrpersons2 <= 3){
     		nrpersons2 = 1;
@@ -103,27 +116,37 @@ public class MyDockLayoutPanel extends Composite {
 		lightbolb = true;
 		//centerPanel.clear();
 		if (loggedin ==  true){
-			g = new EffektvsTidGraf(o);	
-			centerPanel.clear();
-			centerPanel.add(g);
-			//g.setObjects(o);
-		    g.update();
+			
+			if (updated == true){
+				g = new EffektvsTidGraf(o);	
+				centerPanel.clear();
+				centerPanel.add(g);
+				//g.setObjects(o);
+			    g.update();
+			}
+			else{
+				Window.alert("Har du glemt å oppdatere innput?");
+			}
+			
 		}		
 		else{
-			Window.alert("You need to log in to start the simulation");
+			Window.alert("Du må logge inn før du kan gjøre en simulasjon!");
 		}
     }
 
 	@UiHandler("login") void onClick1(ClickEvent ee){
 		
-		if (user.getText().toString().equals(user1)){
+		if (user.getText().toString().equals(user1) && pass.getText().toString().equals(userpass)){
 			loggedin = true;
 			aa.setText("");
-			aa.setText("You are logged in " + user.getText().toString());
+			aa.setText("Du er logget inn " + user.getText().toString());
 	
 		}
+		else if (user.getText().toString().equals("") || pass.getText().toString().equals("")){
+			aa.setText("Du glemte å skrive passord eller brukernavn");
+		}
 		else {
-			aa.setText("Wrong username or pass " + user.getText().toString());
+			aa.setText("Feil brukernavn eller passord" + user.getText().toString());
 		}
 	}
 	

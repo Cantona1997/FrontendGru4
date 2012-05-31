@@ -19,9 +19,11 @@
         }
     </ui:style>
      <g:DockLayoutPanel unit='EM'>
-       <g:north size='2.1'>
+       <g:north size='3.6'>
          <g:FlowPanel styleName="{style.northPanel}">
-         	<g:Button width="132px" height="27px" text="Graf" ui:field="Test1">TEST</g:Button>
+         	<g:Label/>
+         	<g:Label text="Velkommen til Hikst&apos;s Simulator" width="449px" horizontalAlignment="ALIGN_RIGHT" styleName="h2"/>
+         	<g:Button width="132px" height="27px" text="Tegn Graf" ui:field="Test1">TEST</g:Button>
          </g:FlowPanel>
        </g:north>
        <g:west size='16.1'>
@@ -32,19 +34,18 @@
            <g:Button ui:field="update">Oppdatere innput</g:Button>
            <g:TextBox text="Hus størrelse i m^2" ui:field="housesize" name="housesize"/>
            <g:TextBox text="Antall personer i hus" name="nrpersons" ui:field="nrpersons"/>
+           <g:Label text="New Label" ui:field="aa" width="160px"/>
          </g:FlowPanel>
        </g:west>
        <g:center>
          <g:FlowPanel styleName="{style.centerPanel}" ui:field="centerPanel"/>
        </g:center>
-       <g:east size='10.5'>
+       <g:east size='6.8'>
          <g:FlowPanel styleName="{style.eastPanel}"/>
    
        </g:east>
         <g:south size="2.3">
-         <g:FlowPanel styleName="{style.southPanel}">
-         	<g:Label text="New Label" ui:field="aa" width="160px"/>
-         </g:FlowPanel>
+         <g:FlowPanel styleName="{style.southPanel}"/>
         </g:south>
      </g:DockLayoutPanel>
 </ui:UiBinder>
