@@ -21,9 +21,10 @@
      <g:DockLayoutPanel unit='EM'>
        <g:north size='3.6'>
          <g:FlowPanel styleName="{style.northPanel}">
-         	<g:Label/>
-         	<g:Label text="Velkommen til Hikst&apos;s Simulator" width="449px" horizontalAlignment="ALIGN_RIGHT" styleName="h2"/>
-         	<g:Button width="132px" height="27px" text="Tegn Graf" ui:field="Test1">TEST</g:Button>
+
+         	<g:Label text="Velkommen til Hikst Simulator" horizontalAlignment="ALIGN_CENTER"/>
+         	<g:Button width="132px" height="27px" text="Graf" ui:field="Test1">TEST</g:Button>
+
          </g:FlowPanel>
        </g:north>
        <g:west size='16.1'>
