@@ -23,6 +23,7 @@
          <g:FlowPanel styleName="{style.northPanel}">
          	<g:Label text="Velkommen til Hikst Simulator" horizontalAlignment="ALIGN_CENTER"/>
          	<g:Button width="132px" height="27px" text="Graf" ui:field="Test1">TEST</g:Button>
+         	<g:Button ui:field="databaseCall" height="27px">Call Database</g:Button>
          </g:FlowPanel>
        </g:north>
        <g:west size='16.1'>

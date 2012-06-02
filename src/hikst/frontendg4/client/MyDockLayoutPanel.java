@@ -1,6 +1,10 @@
 package hikst.frontendg4.client;
 
+import hikst.frontendg4.shared.Description;
+import hikst.frontendg4.shared.Plot;
+
 import java.util.ArrayList;
+import java.util.List;
 
 import org.apache.tools.ant.taskdefs.Exit;
 
@@ -15,6 +19,7 @@ import com.google.gwt.user.client.ui.CheckBox;
 import com.google.gwt.user.client.ui.Composite;
 import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.Label;
+import com.google.gwt.user.client.ui.RootLayoutPanel;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.Tree;
 import com.google.gwt.user.client.ui.TreeItem;
@@ -28,7 +33,7 @@ public class MyDockLayoutPanel extends Composite {
   private boolean updated = false;
   private String user1 = "Navn";
   private String userpass = "Passord";
-  
+  Simulation simulation;
 
 	//interface MyUiBinder extends UiBinder<Widget, MyDockLayoutPanel>{}
 	Objects o; 
@@ -48,6 +53,7 @@ public class MyDockLayoutPanel extends Composite {
     @UiField Button update;
     @UiField Tree tree;
     @UiField Button remHouses;
+    @UiField Button databaseCall;
     int nrpersons2 = 1;
     int housesize2 = 1;
     int yAxis = 1200;
@@ -189,5 +195,23 @@ public class MyDockLayoutPanel extends Composite {
 		houses.clear();
 		tree.clear();
 		updated = false;
+	}
+	public void setData(Description description)
+    {
+    	simulation = new Simulation(description);
+    	centerPanel.clear();
+    	Graph powerGraph = simulation.getEffectGraph();
+		centerPanel.add(powerGraph);
+		powerGraph.update();
+    }
+	private DatabaseServiceAsync databaseService = GWT.create(DatabaseService.class);
+	
+	MyDockLayoutPanel panel;
+	@UiHandler("databaseCall")
+	void onDatabaseCallClick(ClickEvent event) {
+		RootLayoutPanel.get().add(new MyDockLayoutPanel());
+		panel = new MyDockLayoutPanel();
+		RootLayoutPanel.get().add(panel);
+		databaseService.getSimulations(new ListDescriptionsCallback(panel));
 	}
 }

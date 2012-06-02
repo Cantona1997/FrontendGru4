@@ -16,12 +16,21 @@ public class FrontendGru4 implements EntryPoint {
 			+ "attempting to contact the server. Please check your network "
 			+ "connection and try again.";
 	
-	
+	private DatabaseServiceAsync databaseService = GWT.create(DatabaseService.class);
+	private String message = "";
+	MyDockLayoutPanel panel;
 	/**
 	 * This is the entry point method.
 	 */
 	public void onModuleLoad() {
 		
-		 RootLayoutPanel.get().add(new MyDockLayoutPanel());				
+		 RootLayoutPanel.get().add(new MyDockLayoutPanel());
+		 panel = new MyDockLayoutPanel();
+			//makeCall();
+			RootLayoutPanel.get().add(panel);
+	}
+	private void makeCall()
+	{	
+		databaseService.getSimulations(new ListDescriptionsCallback(panel));	
 	}
 }
