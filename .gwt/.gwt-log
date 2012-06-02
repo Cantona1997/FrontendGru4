@@ -8628,3 +8628,146 @@ Rebinding hikst.frontendg4.client.MyDockLayoutPanel_MyDockLayoutPanelUiBinderImp
    Adding '1' new generated units
       Added 1 units to persistent cache.
       Removing invalidated units
+Rebinding hikst.frontendg4.client.MyDockLayoutPanel.MyDockLayoutPanelUiBinder
+   Invoking generator com.google.gwt.uibinder.rebind.UiBinderGenerator
+      validating {style.northPanel}
+      validating {style.westPanel}
+      validating {style.centerPanel}
+      validating {style.eastPanel}
+      validating {style.southPanel}
+   Adding '3' new generated units
+      Added 3 units to persistent cache.
+      Removing invalidated units
+Rebinding hikst.frontendg4.client.MyDockLayoutPanel_MyDockLayoutPanelUiBinderImpl_designTime1338641265810.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface hikst.frontendg4.client.MyDockLayoutPanel_MyDockLayoutPanelUiBinderImpl_designTime1338641265810.Template
+         Generating method body for html1()
+         Generating method body for html2()
+         Generating method body for html3()
+   Adding '1' new generated units
+      Added 1 units to persistent cache.
+      Removing invalidated units
+Rebinding hikst.frontendg4.client.MyDockLayoutPanel_MyDockLayoutPanelUiBinderImpl_designTime1338641265810_GenBundle
+   Adding '1' new generated units
+      Added 1 units to persistent cache.
+      Removing invalidated units
+Rebinding hikst.frontendg4.client.MyDockLayoutPanel.MyDockLayoutPanelUiBinder
+   Invoking generator com.google.gwt.uibinder.rebind.UiBinderGenerator
+      validating {style.northPanel}
+      validating {style.westPanel}
+      validating {style.centerPanel}
+      validating {style.eastPanel}
+      validating {style.southPanel}
+   Adding '3' new generated units
+      Added 3 units to persistent cache.
+      Removing invalidated units
+Rebinding hikst.frontendg4.client.MyDockLayoutPanel_MyDockLayoutPanelUiBinderImpl_designTime1338641295669.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface hikst.frontendg4.client.MyDockLayoutPanel_MyDockLayoutPanelUiBinderImpl_designTime1338641295669.Template
+         Generating method body for html1()
+         Generating method body for html2()
+         Generating method body for html3()
+         Generating method body for html4()
+   Adding '1' new generated units
+      Added 1 units to persistent cache.
+      Removing invalidated units
+Rebinding hikst.frontendg4.client.MyDockLayoutPanel_MyDockLayoutPanelUiBinderImpl_designTime1338641295669_GenBundle
+   Adding '1' new generated units
+      Added 1 units to persistent cache.
+      Removing invalidated units
+Rebinding hikst.frontendg4.client.MyDockLayoutPanel.MyDockLayoutPanelUiBinder
+   Invoking generator com.google.gwt.uibinder.rebind.UiBinderGenerator
+      validating {style.northPanel}
+      validating {style.westPanel}
+      validating {style.centerPanel}
+      validating {style.eastPanel}
+      validating {style.southPanel}
+   Adding '3' new generated units
+      Added 3 units to persistent cache.
+      Removing invalidated units
+Rebinding hikst.frontendg4.client.MyDockLayoutPanel_MyDockLayoutPanelUiBinderImpl_designTime1338641305494.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface hikst.frontendg4.client.MyDockLayoutPanel_MyDockLayoutPanelUiBinderImpl_designTime1338641305494.Template
+         Generating method body for html1()
+         Generating method body for html2()
+         Generating method body for html3()
+         Generating method body for html4()
+   Adding '1' new generated units
+      Added 1 units to persistent cache.
+      Removing invalidated units
+Rebinding hikst.frontendg4.client.MyDockLayoutPanel_MyDockLayoutPanelUiBinderImpl_designTime1338641305494_GenBundle
+   Adding '1' new generated units
+      Added 1 units to persistent cache.
+      Removing invalidated units
+Rebinding hikst.frontendg4.client.MyDockLayoutPanel.MyDockLayoutPanelUiBinder
+   Invoking generator com.google.gwt.uibinder.rebind.UiBinderGenerator
+      validating {style.northPanel}
+      validating {style.westPanel}
+      validating {style.centerPanel}
+      validating {style.eastPanel}
+      validating {style.southPanel}
+   Adding '3' new generated units
+      Added 3 units to persistent cache.
+      Removing invalidated units
+Rebinding hikst.frontendg4.client.MyDockLayoutPanel_MyDockLayoutPanelUiBinderImpl_designTime1338641311324.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface hikst.frontendg4.client.MyDockLayoutPanel_MyDockLayoutPanelUiBinderImpl_designTime1338641311324.Template
+         Generating method body for html1()
+         Generating method body for html2()
+         Generating method body for html3()
+         Generating method body for html4()
+   Adding '1' new generated units
+      Added 1 units to persistent cache.
+      Removing invalidated units
+Rebinding hikst.frontendg4.client.MyDockLayoutPanel_MyDockLayoutPanelUiBinderImpl_designTime1338641311324_GenBundle
+   Adding '1' new generated units
+      Added 1 units to persistent cache.
+      Removing invalidated units
+Rebinding hikst.frontendg4.client.MyDockLayoutPanel.MyDockLayoutPanelUiBinder
+   Invoking generator com.google.gwt.uibinder.rebind.UiBinderGenerator
+      validating {style.northPanel}
+      validating {style.westPanel}
+      validating {style.centerPanel}
+      validating {style.eastPanel}
+      validating {style.southPanel}
+   Adding '3' new generated units
+      Added 3 units to persistent cache.
+      Removing invalidated units
+Rebinding hikst.frontendg4.client.MyDockLayoutPanel_MyDockLayoutPanelUiBinderImpl_designTime1338641317025.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface hikst.frontendg4.client.MyDockLayoutPanel_MyDockLayoutPanelUiBinderImpl_designTime1338641317025.Template
+         Generating method body for html1()
+         Generating method body for html2()
+         Generating method body for html3()
+         Generating method body for html4()
+   Adding '1' new generated units
+      Added 1 units to persistent cache.
+      Removing invalidated units
+Rebinding hikst.frontendg4.client.MyDockLayoutPanel_MyDockLayoutPanelUiBinderImpl_designTime1338641317025_GenBundle
+   Adding '1' new generated units
+      Added 1 units to persistent cache.
+      Removing invalidated units
+Rebinding hikst.frontendg4.client.MyDockLayoutPanel.MyDockLayoutPanelUiBinder
+   Invoking generator com.google.gwt.uibinder.rebind.UiBinderGenerator
+      validating {style.northPanel}
+      validating {style.westPanel}
+      validating {style.centerPanel}
+      validating {style.eastPanel}
+      validating {style.southPanel}
+   Adding '3' new generated units
+      Added 3 units to persistent cache.
+      Removing invalidated units
+Rebinding hikst.frontendg4.client.MyDockLayoutPanel_MyDockLayoutPanelUiBinderImpl_designTime1338641330619.Template
+   Invoking generator com.google.gwt.safehtml.rebind.SafeHtmlTemplatesGenerator
+      Constructing interface hikst.frontendg4.client.MyDockLayoutPanel_MyDockLayoutPanelUiBinderImpl_designTime1338641330619.Template
+         Generating method body for html1()
+         Generating method body for html2()
+         Generating method body for html3()
+         Generating method body for html4()
+   Adding '1' new generated units
+      Added 1 units to persistent cache.
+      Removing invalidated units
+Rebinding hikst.frontendg4.client.MyDockLayoutPanel_MyDockLayoutPanelUiBinderImpl_designTime1338641330619_GenBundle
+   Adding '1' new generated units
+      Added 1 units to persistent cache.
+      Removing invalidated units

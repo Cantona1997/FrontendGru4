@@ -2,6 +2,8 @@ package hikst.frontendg4.client;
 
 import java.util.ArrayList;
 
+import org.apache.tools.ant.taskdefs.Exit;
+
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
 import com.google.gwt.uibinder.client.UiBinder;
@@ -45,6 +47,7 @@ public class MyDockLayoutPanel extends Composite {
     @UiField Label aa;
     @UiField Button update;
     @UiField Tree tree;
+    @UiField Button remHouses;
     int nrpersons2 = 1;
     int housesize2 = 1;
     int yAxis = 1200;
@@ -90,6 +93,11 @@ public class MyDockLayoutPanel extends Composite {
     		nrpersons2 = 3;
     		yAxis = 3000;
     	}
+    	if (nrpersons2 > 9 || housesize2 > 250){
+    		Window.alert("For stort hus, eller for mange beboere.");
+    		return;
+    	}
+    	
     	
     	if (housesize2 <= 80){
     		housesize2 = 1;
@@ -140,7 +148,7 @@ public class MyDockLayoutPanel extends Composite {
 		    g.update();
 			}
 			else {
-				 Window.alert("Har du glemt \u00E5 oppdatere innput?");
+				 Window.alert("Du m\u00E5 legge til hus før du kan simulere");
 			}
 			
 		}		
@@ -175,5 +183,11 @@ public class MyDockLayoutPanel extends Composite {
 	@UiHandler("pass")
 	void onPassClick(ClickEvent event) {
 		pass.setText("");
+	}
+	@UiHandler("remHouses")
+	void onRemHousesClick(ClickEvent event) {
+		houses.clear();
+		tree.clear();
+		updated = false;
 	}
 }

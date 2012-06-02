@@ -30,12 +30,13 @@
          	<g:TextBox text="Navn" width="172px" ui:field="user" name="user"/>
            <g:TextBox text="Passord" width="172px" ui:field="pass" name="pass"/>
            <g:Button ui:field="login">Logg Inn</g:Button>
-           <g:Button ui:field="update">Oppdatere innput</g:Button>
+           <g:Button ui:field="update" text="Legg til hus">Oppdatere innput</g:Button>
            <g:TextBox text="Hus størrelse i m^2" ui:field="housesize" name="housesize"/>
            <g:TextBox text="Antall personer i hus" name="nrpersons" ui:field="nrpersons"/>
            <g:Label text="New Label" ui:field="aa" width="160px"/>
            <g:Tree ui:field="tree" animationEnabled="true">
            </g:Tree>
+           <g:Button text="Fjern alle hus" ui:field="remHouses">Fjern hus</g:Button>
          </g:FlowPanel>
        </g:west>
        <g:center>
