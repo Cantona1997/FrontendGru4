@@ -4,5 +4,6 @@
 *.jar
 *.war
 *.ear
+Thumbs.db
 /gwt-unitCache
 /.gwt
